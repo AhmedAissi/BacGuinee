@@ -1,0 +1,36 @@
+﻿<Window x:Class="BacExamProcess.WelcomePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BacExamProcess"
+        mc:Ignorable="d"
+        Title="WelcomePage" 
+        Height="500" Width="350" 
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" 
+        FontFamily="Segoe UI Emoji"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Grid>
+        <Rectangle Height="100" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2281D1"/>
+                    <GradientStop Color="#FF34268A" Offset="1"/>
+                    <GradientStop Color="#FF33288B" Offset="0.546"/>
+                </LinearGradientBrush>
+                
+            </Rectangle.Fill>
+            
+        </Rectangle>
+        <TextBlock  TextWrapping="Wrap" Text="Bienvenu " HorizontalAlignment="Center" FontSize="50" Foreground="White"/>
+        <Grid VerticalAlignment="Bottom" Margin="35,80" Height="240">
+        
+            <StackPanel VerticalAlignment="Center">
+                <Button Width="400" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Consulter Enveloppes"/>
+                <Button Width="400" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="15"  Content="Ajouter Enveloppe" Click="Button_Click"/>
+            </StackPanel>
+        </Grid>
+       
+    </Grid>
+</Window>

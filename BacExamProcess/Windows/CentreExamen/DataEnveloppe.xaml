@@ -1,0 +1,40 @@
+﻿<Window x:Class="BacExamProcess.DataEnveloppe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BacExamProcess"
+             mc:Ignorable="d"
+        Title="WelcomePage" Height="450" Width="800"
+           FontFamily="Segoe UI Emoji"
+        WindowState = "Maximized"
+        WindowStyle = "None"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Grid>
+        <Rectangle Height="100" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2281D1"/>
+                    <GradientStop Color="#FF34268A" Offset="1"/>
+                    <GradientStop Color="#FF33288B" Offset="0.546"/>
+                </LinearGradientBrush>
+
+            </Rectangle.Fill>
+
+        </Rectangle>
+        <TextBlock  TextWrapping="Wrap" Text="Veulliez Introduire Les Données apparaissant sur L'enveloppe " HorizontalAlignment="Center" FontSize="28" Foreground="White"/>
+        <Grid VerticalAlignment="Bottom" Margin="35,80" Height="500">
+
+            <StackPanel VerticalAlignment="Center">
+                <ComboBox Margin="0,10" materialDesign:HintAssist.Hint="Code Centre d'Examen"  FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+                <ComboBox Margin="0,10" materialDesign:HintAssist.Hint="Salle"  FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+                <TextBox Margin="0,10" materialDesign:HintAssist.Hint="Session" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+                <TextBox Margin="0,10" materialDesign:HintAssist.Hint="Filière"  FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+                <TextBox Margin="0,10" materialDesign:HintAssist.Hint="Matière" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+                <TextBox Margin="0,10" materialDesign:HintAssist.Hint="Nombre de cartouches" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+                <Button Width="400" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="15"  Content="Ajouter Enveloppe" />
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>
